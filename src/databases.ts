@@ -4,12 +4,12 @@ import * as T from "./type";
 
 const host = "https://api.digitalocean.com/v2";
 
-export const preRequest = async <A>(
+export const preRequest = async (
   path: string,
   token: string,
   method: "GET" | "POST" | "DELETE" = "GET",
   data: any = undefined
-): Promise<A> => {
+): Promise<any> => {
   const url = host + path;
   const headers = {
     authorization: "Bearer " + token,
