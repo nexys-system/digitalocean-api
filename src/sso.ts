@@ -1,4 +1,3 @@
-import fetch from "node-fetch";
 import { objToQueryString } from "./utils";
 
 const host = "https://cloud.digitalocean.com/v1/oauth";
@@ -49,7 +48,5 @@ export const getToken = async (
 
   const r = await fetch(url, { method: "POST" });
   //console.log(r);
-  const response: SSOResponse = await r.json();
-
-  return response;
+  return r.json() as Promise<SSOResponse>;
 };

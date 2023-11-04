@@ -13,17 +13,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/Nexysweb/boilerplate-node-package"
+    "url": "https://github.com/nexys-system/digitalocean-api"
   },
   "devDependencies": {
-    "@types/jest": "^25.2.3",
-    "@types/node-fetch": "^2.5.10",
-    "jest": "^26.0.1",
-    "node-fetch": "^2.6.1",
-    "ts-jest": "^25.3.1",
-    "typescript": "^3.9.3"
-  },
-  "peerDependencies": {
-    "node-fetch": "^2.6.1"
+    "@types/jest": "^29.5.7",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.2.2"
   }
 }

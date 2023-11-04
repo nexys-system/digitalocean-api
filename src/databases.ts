@@ -1,5 +1,3 @@
-import fetch from "node-fetch";
-
 import * as T from "./type";
 
 const host = "https://api.digitalocean.com/v2";
@@ -42,4 +40,4 @@ export const create = async (data: T.DatabaseCreate, token: string) =>
 export const deleteByUuid = async (uuid: string, token: string) => {
   const r = await preRequest("/databases/" + uuid, token, "DELETE");
   return r.text();
-}
+};
